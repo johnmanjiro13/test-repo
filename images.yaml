@@ -2,4 +2,4 @@ kind: Kustomization
 images:
   - name: hoge
     newName: fuga
-    newTag: stg-fuga
+    newTag: stg-bar
