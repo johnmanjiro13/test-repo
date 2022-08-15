@@ -1,0 +1,5 @@
+kind: Kustomization
+images:
+  - name: hoge
+    newName: fuga
+    newTag: stg-fuga
