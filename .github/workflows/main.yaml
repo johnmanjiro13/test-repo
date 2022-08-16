@@ -16,8 +16,6 @@ jobs:
           PULL_REQUEST_BRANCH: "sandbox"
           PULL_REQUEST_TITLE: "staging -> sandbox"
           PULL_REQUEST_BODY: |
-            stagingでのマニフェストの変更を取り込むために自動生成されたPRです。
-            コンフリクトしている場合は、ローカルでsandboxブランチにstagingブランチを取り込み、コンフリクトを解消してsandboxブランチへpushしてください。
             ```
             git switch sandbox
             git pull origin staging
