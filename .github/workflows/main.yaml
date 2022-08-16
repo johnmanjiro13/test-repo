@@ -1,0 +1,26 @@
+name: Import staging branch to sandbox branch
+
+on:
+  push:
+    branches: [ staging ]
+
+jobs:
+  auto-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull Request Action
+        uses: vsoch/pull-request-action@1.0.12
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PULL_REQUEST_FROM_BRANCH: "staging"
+          PULL_REQUEST_BRANCH: "sandbox"
+          PULL_REQUEST_TITLE: "staging -> sandbox"
+          PULL_REQUEST_BODY: |
+            stagingでのマニフェストの変更を取り込むために自動生成されたPRです。
+            コンフリクトしている場合は、ローカルでsandboxブランチにstagingブランチを取り込み、コンフリクトを解消してsandboxブランチへpushしてください。
+            ```
+            git switch sandbox
+            git pull origin staging
+            # コンフリクトを解消後にpush
+            git push origin sandbox
+            ```
