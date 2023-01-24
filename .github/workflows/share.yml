@@ -1,0 +1,12 @@
+name: share variables
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tagpr:
+    runs-on: ubuntu-latest
+    steps:
+      - run: msg="hoge fuga"
+      - run: echo $msg
