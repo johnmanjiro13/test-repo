@@ -39,4 +39,4 @@
 [tagpr]
 	vPrefix = true
 	releaseBranch = main
-	versionFile = version.txt
+	versionFile = test.txt,test/version.txt
