@@ -5,8 +5,8 @@ on:
       - main
 
 jobs:
-  tagpr:
+  share:
     runs-on: ubuntu-latest
     steps:
-      - run: msg="hoge fuga"
+      - run: echo "msg=$(echo 'fuga')" >> $GITHUB_ENV
       - run: echo $msg
