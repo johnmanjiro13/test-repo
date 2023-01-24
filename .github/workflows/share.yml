@@ -8,7 +8,5 @@ jobs:
   share:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "msg=$(echo 'fuga')" >> $GITHUB_ENV
-      - run: echo $MSG
-        env:
-          MSG: $msg
+      - run: echo "SLACK_MESSAGE=$(echo 'fuga')" >> $GITHUB_ENV
+      - run: echo $SLACK_MESSAGE
