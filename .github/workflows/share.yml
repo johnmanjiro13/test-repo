@@ -9,4 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "msg=$(echo 'fuga')" >> $GITHUB_ENV
-      - run: echo $msg
+      - run: echo $MSG
+        env:
+          MSG: $msg
