@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.3.1](https://github.com/johnmanjiro13/test-repo/compare/v2.3.0...v2.3.1) - 2023-02-01
+- Update .tagpr by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/18
+- Update test.txt by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/19
+- Update version.txt by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/21
+- Update README.md by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/22
+- Update README.md by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/23
+
 ## [v2.3.0](https://github.com/johnmanjiro13/test-repo/compare/v2.2.1...v2.3.0) - 2023-01-24
 - update by @johnmanjiro13 in https://github.com/johnmanjiro13/test-repo/pull/17
 
