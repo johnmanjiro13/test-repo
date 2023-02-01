@@ -1,12 +1,10 @@
-name: share variables
+name: execute test
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [ready_for_review]
 
 jobs:
-  share:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "SLACK_MESSAGE=$(echo 'fuga')" >> $GITHUB_ENV
-      - run: echo $SLACK_MESSAGE
+      - run: echo "success"
