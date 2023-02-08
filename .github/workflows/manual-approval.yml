@@ -1,0 +1,20 @@
+name: manual-approval
+on:
+  push:
+    branches:
+      - manual-approval-action
+
+permissions:
+  issues: write
+
+jobs:
+  manual-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for approval
+        uses: trstringer/manual-approval@v1
+        timeout-minutes: 60
+        with:
+          secret: ${{ github.token }}
+          approvers: johnmanjiro13
+          minimum-approvals: 1
