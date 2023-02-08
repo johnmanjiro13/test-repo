@@ -1,4 +1,0 @@
-This is a test document.
-
-update
-v2.3.0
