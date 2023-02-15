@@ -16,5 +16,5 @@ jobs:
         timeout-minutes: 60
         with:
           secret: ${{ github.token }}
-          approvers: johnmanjiro13
+          approvers: m-hamashita
           minimum-approvals: 1
