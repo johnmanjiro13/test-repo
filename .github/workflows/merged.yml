@@ -6,4 +6,4 @@ on:
 jobs:
   merged:
     if: github.event.pull_request.merged == true
-    uses: ./.github/workflows/reusable
+    uses: ./.github/workflows/reusable.yml
