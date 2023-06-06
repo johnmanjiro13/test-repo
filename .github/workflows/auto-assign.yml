@@ -1,0 +1,13 @@
+name: auto-assign
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  auto-assign:
+    sruns-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: johnmanjiro13/auto-assign
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
