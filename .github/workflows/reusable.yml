@@ -6,5 +6,5 @@ jobs:
   reusable:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
+      - name: Hello world test
         run: echo "Hello world"
