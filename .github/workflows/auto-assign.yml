@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: johnmanjiro13/auto-assign@7579dd6ed02da4c66ae63ade603b3b94a76fedc3
+      - uses: johnmanjiro13/auto-assign@0078b6dc122413239342756176e9423542be5c0a
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
